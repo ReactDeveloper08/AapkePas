@@ -1,0 +1,973 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.doomshell.aapkepass"
+4    android:versionCode="12053004"
+5    android:versionName="1.7" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:5:6-68
+11-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:5:23-65
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:6:5-79
+12-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+13-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:7:5-80
+13-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" />
+14-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:8:5-9:47
+14-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:8:22-90
+15    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+15-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:10:5-75
+15-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:10:22-72
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:11:5-81
+16-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+17-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:12:5-80
+17-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:12:22-77
+18    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+18-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:13:5-81
+18-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:13:22-78
+19    <uses-permission android:name="android.permission.VIBRATE" />
+19-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:14:5-65
+19-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:14:22-63
+20
+21    <uses-feature android:name="android.hardware.camera" />
+21-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:15:5-59
+21-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:15:19-57
+22    <uses-feature android:name="android.hardware.camera.autofocus" />
+22-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:16:5-69
+22-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:16:19-67
+23
+24    <uses-permission android:name="android.permission.CAMERA" />
+24-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:17:5-64
+24-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:17:22-62
+25    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+25-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:18:5-70
+25-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:18:22-68
+26    <uses-permission android:name="android.permission.FLASHLIGHT" />
+26-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:19:5-68
+26-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:19:22-66
+27    <!-- <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" -->
+28    <!-- tools:ignore="ScopedStorage" /> -->
+29    <!-- <uses-permission android:name="android.permission.READ_CALL_LOG" /> -->
+30    <!-- IncomingCall Permissions Start -->
+31    <uses-permission android:name="android.permission.WAKE_LOCK" />
+31-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:24:10-73
+31-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:24:27-70
+32    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+32-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:25:5-81
+32-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:25:22-78
+33    <!-- <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> -->
+34    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+34-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:27:5-76
+34-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:27:22-74
+35    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+35-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:28:5-77
+35-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:28:22-75
+36    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+36-->[:react-native-community_netinfo] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:5-79
+36-->[:react-native-community_netinfo] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:9:22-76
+37    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+37-->[:react-native-community_netinfo] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-76
+37-->[:react-native-community_netinfo] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-community/netinfo/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-73
+38    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+38-->[:react-native-agora] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-agora/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:5-80
+38-->[:react-native-agora] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-agora/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:22-77
+39    <uses-permission android:name="android.permission.BLUETOOTH" />
+39-->[:react-native-agora] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-agora/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:5-68
+39-->[:react-native-agora] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-agora/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:22-65
+40    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" /> <!-- Required to access Google Play Licensing -->
+40-->[:react-native-agora] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-agora/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:5-21:47
+40-->[:react-native-agora] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-agora/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-70
+41    <uses-permission android:name="com.android.vending.CHECK_LICENSE" />
+41-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:5-73
+41-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:22-70
+42
+43    <queries>
+43-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:17:5-19:15
+44        <package android:name="com.facebook.katana" />
+44-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:18:9-55
+44-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:18:18-52
+45
+46        <intent>
+46-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:11:9-17:18
+47            <action android:name="android.intent.action.VIEW" />
+47-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+47-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+48
+49            <data
+49-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+50                android:mimeType="*/*"
+51                android:scheme="*" />
+51-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+52        </intent>
+53        <intent>
+53-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:18:9-27:18
+54            <action android:name="android.intent.action.VIEW" />
+54-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+54-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+55
+56            <category android:name="android.intent.category.BROWSABLE" />
+56-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:15-76
+56-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:25-73
+57
+58            <data
+58-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+59                android:host="pay"
+60                android:mimeType="*/*"
+61                android:scheme="upi" />
+61-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+62        </intent>
+63        <intent>
+63-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:28:9-30:18
+64            <action android:name="android.intent.action.MAIN" />
+64-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:55:13-65
+64-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:55:21-62
+65        </intent>
+66        <intent>
+66-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:31:9-35:18
+67            <action android:name="android.intent.action.SEND" />
+67-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:32:13-65
+67-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:32:21-62
+68
+69            <data android:mimeType="*/*" />
+69-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+70        </intent>
+71        <intent>
+71-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:36:9-38:18
+72            <action android:name="rzp.device_token.share" />
+72-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:37:13-61
+72-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:37:21-58
+73        </intent>
+74    </queries>
+75
+76    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+76-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:16:5-79
+76-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:16:22-76
+77    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+77-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:5-110
+77-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:26:22-107
+78    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- for android -->
+78-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:5-82
+78-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:25:22-79
+79    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+80    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+81    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+82    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+83    <!-- for Samsung -->
+84    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+84-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:5-86
+84-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:19:22-83
+85    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+85-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:5-87
+85-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:20:22-84
+86    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+86-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:5-81
+86-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:23:22-78
+87    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+87-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:5-83
+87-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:24:22-80
+88    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+88-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:5-88
+88-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:27:22-85
+89    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- for apex -->
+89-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:5-92
+89-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:28:22-89
+90    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+90-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:5-84
+90-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:31:22-81
+91    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- for huawei -->
+91-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:5-83
+91-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:34:22-80
+92    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+92-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:5-91
+92-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:37:22-88
+93    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+93-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:5-92
+93-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:38:22-89
+94    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- for ZUK -->
+94-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:5-93
+94-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:39:22-90
+95    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- for OPPO -->
+95-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:5-73
+95-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:42:22-70
+96    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+96-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:5-82
+96-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:45:22-79
+97    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- for EvMe -->
+97-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:5-83
+97-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:46:22-80
+98    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+98-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:5-88
+98-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:49:22-85
+99    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+99-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:5-89
+99-->[me.leolin:ShortcutBadger:1.1.22] /Users/dheerndra/.gradle/caches/transforms-3/4271775a181f8494281c92987bf97bf6/transformed/jetified-ShortcutBadger-1.1.22/AndroidManifest.xml:50:22-86
+100
+101    <uses-feature
+101-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/98a569dd27eb26f8760d486e657799aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:26:5-28:35
+102        android:glEsVersion="0x00020000"
+102-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/98a569dd27eb26f8760d486e657799aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:27:9-41
+103        android:required="true" /> <!-- <permission -->
+103-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/98a569dd27eb26f8760d486e657799aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:28:9-32
+104    <!-- android:name="android.permission.INTERACT_ACROSS_USERS_FULL" -->
+105    <!-- android:protectionLevel="signature" /> -->
+106    <!-- IncomingCall Permissions End -->
+107    <application
+107-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:33:5-92:19
+108        android:name="com.doomshell.aapkepass.MainApplication"
+108-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:34:7-38
+109        android:allowBackup="false"
+109-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:38:7-34
+110        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+110-->[androidx.core:core:1.6.0] /Users/dheerndra/.gradle/caches/transforms-3/8f4d7084c88ff51d844acb8cb12e3dda/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+111        android:icon="@mipmap/ic_launcher"
+111-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:36:7-41
+112        android:label="@string/app_name"
+112-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:35:7-39
+113        android:requestLegacyExternalStorage="true"
+113-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:41:7-50
+114        android:roundIcon="@mipmap/ic_launcher_round"
+114-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:37:7-52
+115        android:supportsRtl="true"
+115-->[:react-native-clear-cache-lcm] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-clear-cache-lcm/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:9-35
+116        android:theme="@style/AppTheme"
+116-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:39:7-38
+117        android:usesCleartextTraffic="true" >
+117-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:40:7-42
+118        <activity
+118-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:45:7-64:18
+119            android:name="com.doomshell.aapkepass.MainActivity"
+119-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:46:9-37
+120            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
+120-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:49:9-86
+121            android:exported="true"
+121-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:47:10-33
+122            android:label="@string/app_name"
+122-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:48:9-41
+123            android:launchMode="singleTask"
+123-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:50:9-40
+124            android:screenOrientation="portrait"
+124-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:51:9-45
+125            android:windowSoftInputMode="adjustPan" >
+125-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:52:9-48
+126            <intent-filter>
+126-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:54:9-57:25
+127                <action android:name="android.intent.action.MAIN" />
+127-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:55:13-65
+127-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:55:21-62
+128
+129                <category android:name="android.intent.category.LAUNCHER" />
+129-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:56:13-73
+129-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:56:23-70
+130            </intent-filter>
+131            <intent-filter android:label="@string/app_name" >
+131-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:58:11-63:27
+131-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:58:26-58
+132                <action android:name="android.intent.action.VIEW" />
+132-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+132-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+133
+134                <category android:name="android.intent.category.DEFAULT" />
+134-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:15-74
+134-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:25-71
+135                <category android:name="android.intent.category.BROWSABLE" />
+135-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:15-76
+135-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:25-73
+136
+137                <data android:scheme="viauapp" />
+137-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+137-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+138            </intent-filter>
+139        </activity>
+140        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+140-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:66:9-86
+140-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:66:19-83
+141        <!-- facebook login -->
+142        <meta-data
+142-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:68:9-107
+143            android:name="com.facebook.sdk.ApplicationId"
+143-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:68:20-65
+144            android:value="@string/facebook_app_id" />
+144-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:68:66-105
+145
+146        <activity
+146-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:69:9-72:48
+147            android:name="com.facebook.FacebookActivity"
+147-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:69:19-63
+148            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+148-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:70:13-113
+149            android:label="@string/app_name"
+149-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:72:13-45
+150            android:theme="@style/com_facebook_activity_theme" />
+150-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:25:13-63
+151        <activity
+151-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:73:9-82:20
+152            android:name="com.facebook.CustomTabActivity"
+152-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:74:13-58
+153            android:exported="true" >
+153-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:75:13-36
+154            <intent-filter>
+154-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:76:13-81:29
+155                <action android:name="android.intent.action.VIEW" />
+155-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+155-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+156
+157                <category android:name="android.intent.category.DEFAULT" />
+157-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:15-74
+157-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:25-71
+158                <category android:name="android.intent.category.BROWSABLE" />
+158-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:15-76
+158-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:25-73
+159
+160                <data android:scheme="@string/fb_login_protocol_scheme" />
+160-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+160-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+161            </intent-filter>
+162            <intent-filter>
+162-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:31:13-40:29
+163                <action android:name="android.intent.action.VIEW" />
+163-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+163-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+164
+165                <category android:name="android.intent.category.DEFAULT" />
+165-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:15-74
+165-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:25-71
+166                <category android:name="android.intent.category.BROWSABLE" />
+166-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:15-76
+166-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:25-73
+167
+168                <data
+168-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+169                    android:host="cct.com.doomshell.aapkepass"
+170                    android:scheme="fbconnect" />
+170-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+171            </intent-filter>
+172        </activity>
+173
+174        <meta-data
+174-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:84:9-86:89
+175            android:name="com.google.firebase.messaging.default_notification_icon"
+175-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:85:13-83
+176            android:resource="@drawable/ic_stat_name" />
+176-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:86:13-54
+177        <meta-data
+177-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:87:9-89:97
+178            android:name="com.google.firebase.messaging.default_notification_color"
+178-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:88:13-84
+179            android:resource="@color/ic_launcher_background" />
+179-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:89:13-61
+180
+181        <service android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService" />
+181-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-111
+181-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:18-108
+182        <service
+182-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:9-21:19
+183            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService"
+183-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-95
+184            android:exported="false" >
+184-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:13-37
+185            <intent-filter>
+185-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+186                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+186-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+186-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+187            </intent-filter>
+188        </service>
+189
+190        <receiver
+190-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:9-30:20
+191            android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver"
+191-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-96
+192            android:exported="true"
+192-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:25:13-36
+193            android:permission="com.google.android.c2dm.permission.SEND" >
+193-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:26:13-73
+194            <intent-filter>
+194-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+195                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+195-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+195-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+196            </intent-filter>
+197        </receiver>
+198
+199        <meta-data
+199-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:32:9-34:36
+200            android:name="firebase_messaging_auto_init_enabled"
+200-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:33:13-64
+201            android:value="true" />
+201-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:13-33
+202        <meta-data
+202-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:9-37:32
+203            android:name="com.google.firebase.messaging.default_notification_channel_id"
+203-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-89
+204            android:value="" />
+204-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-29
+205        <meta-data
+205-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:36
+206            android:name="app_data_collection_default_enabled"
+206-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-63
+207            android:value="true" />
+207-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-33
+208
+209        <service
+209-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:9-18:19
+210            android:name="com.google.firebase.components.ComponentDiscoveryService"
+210-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:18-89
+211            android:directBootAware="true"
+211-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:35:13-43
+212            android:exported="false" >
+212-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:76:13-37
+213            <meta-data
+213-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:85
+214                android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar"
+214-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-120
+215                android:value="com.google.firebase.components.ComponentRegistrar" />
+215-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-82
+216            <meta-data
+216-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:77:13-79:85
+217                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+217-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:78:17-109
+218                android:value="com.google.firebase.components.ComponentRegistrar" />
+218-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:79:17-82
+219            <meta-data
+219-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/c727e9bcd979119462328ed52e28dfe4/transformed/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:11:13-13:85
+220                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar"
+220-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/c727e9bcd979119462328ed52e28dfe4/transformed/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:12:17-126
+221                android:value="com.google.firebase.components.ComponentRegistrar" />
+221-->[com.google.firebase:firebase-analytics-ktx:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/c727e9bcd979119462328ed52e28dfe4/transformed/jetified-firebase-analytics-ktx-20.0.2/AndroidManifest.xml:13:17-82
+222            <meta-data
+222-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:52:13-54:85
+223                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+223-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:53:17-119
+224                android:value="com.google.firebase.components.ComponentRegistrar" />
+224-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:54:17-82
+225            <meta-data
+225-->[com.google.firebase:firebase-database:20.0.3] /Users/dheerndra/.gradle/caches/transforms-3/253c728db11860487ce177520180cf4a/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:32:13-34:85
+226                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+226-->[com.google.firebase:firebase-database:20.0.3] /Users/dheerndra/.gradle/caches/transforms-3/253c728db11860487ce177520180cf4a/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:33:17-109
+227                android:value="com.google.firebase.components.ComponentRegistrar" />
+227-->[com.google.firebase:firebase-database:20.0.3] /Users/dheerndra/.gradle/caches/transforms-3/253c728db11860487ce177520180cf4a/transformed/jetified-firebase-database-20.0.3/AndroidManifest.xml:34:17-82
+228            <meta-data
+228-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/dheerndra/.gradle/caches/transforms-3/4c187c63f759d4babf9196078c56d7ea/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:28:13-30:85
+229                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+229-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/dheerndra/.gradle/caches/transforms-3/4c187c63f759d4babf9196078c56d7ea/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:29:17-115
+230                android:value="com.google.firebase.components.ComponentRegistrar" />
+230-->[com.google.firebase:firebase-datatransport:18.0.0] /Users/dheerndra/.gradle/caches/transforms-3/4c187c63f759d4babf9196078c56d7ea/transformed/jetified-firebase-datatransport-18.0.0/AndroidManifest.xml:30:17-82
+231            <meta-data
+231-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/f0c21dd8dbc7e7468320cc2bcd1e89cc/transformed/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:15:13-17:85
+232                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar"
+232-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/f0c21dd8dbc7e7468320cc2bcd1e89cc/transformed/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:16:17-113
+233                android:value="com.google.firebase.components.ComponentRegistrar" />
+233-->[com.google.firebase:firebase-common-ktx:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/f0c21dd8dbc7e7468320cc2bcd1e89cc/transformed/jetified-firebase-common-ktx-20.0.0/AndroidManifest.xml:17:17-82
+234            <meta-data
+234-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/7cf57b76ad4aefcaa2553105392dd160/transformed/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:30:13-32:85
+235                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+235-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/7cf57b76ad4aefcaa2553105392dd160/transformed/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:31:17-139
+236                android:value="com.google.firebase.components.ComponentRegistrar" />
+236-->[com.google.android.gms:play-services-measurement-api:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/7cf57b76ad4aefcaa2553105392dd160/transformed/jetified-play-services-measurement-api-20.0.2/AndroidManifest.xml:32:17-82
+237            <meta-data
+237-->[com.google.firebase:firebase-installations:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/5b33d007e68de9ac4f911b64a8ba9a37/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:18:13-20:85
+238                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+238-->[com.google.firebase:firebase-installations:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/5b33d007e68de9ac4f911b64a8ba9a37/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:19:17-127
+239                android:value="com.google.firebase.components.ComponentRegistrar" />
+239-->[com.google.firebase:firebase-installations:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/5b33d007e68de9ac4f911b64a8ba9a37/transformed/jetified-firebase-installations-17.0.0/AndroidManifest.xml:20:17-82
+240        </service>
+241
+242        <provider
+242-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:9-24:38
+243            android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"
+243-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:21:13-88
+244            android:authorities="com.doomshell.aapkepass.reactnativefirebaseappinitprovider"
+244-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:22:13-86
+245            android:exported="false"
+245-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:23:13-37
+246            android:initOrder="99" />
+246-->[:react-native-firebase_app] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/app/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:24:13-35
+247        <provider
+247-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+248            android:name="com.imagepicker.FileProvider"
+248-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-56
+249            android:authorities="com.doomshell.aapkepass.provider"
+249-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-60
+250            android:exported="false"
+250-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+251            android:grantUriPermissions="true" >
+251-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+252            <meta-data
+252-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:58
+253                android:name="android.support.FILE_PROVIDER_PATHS"
+253-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+254                android:resource="@xml/provider_paths" />
+254-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-55
+255        </provider>
+256
+257        <activity
+257-->[:react-native-razorpay] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-razorpay/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-12:86
+258            android:name="com.razorpay.CheckoutActivity"
+258-->[:react-native-razorpay] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-razorpay/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-57
+259            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+259-->[:react-native-razorpay] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-razorpay/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-83
+260            android:exported="false"
+260-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:54:13-37
+261            android:theme="@style/CheckoutTheme" >
+261-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:55:13-49
+262            <intent-filter>
+262-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:56:13-58:29
+263                <action android:name="android.intent.action.MAIN" />
+263-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:55:13-65
+263-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:55:21-62
+264            </intent-filter>
+265        </activity>
+266
+267        <provider
+267-->[:react-native-share] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+268            android:name="cl.json.RNShareFileProvider"
+268-->[:react-native-share] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-55
+269            android:authorities="com.doomshell.aapkepass.rnshare.fileprovider"
+269-->[:react-native-share] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-72
+270            android:exported="false"
+270-->[:react-native-share] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+271            android:grantUriPermissions="true" >
+271-->[:react-native-share] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-share/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+272            <meta-data
+272-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:58
+273                android:name="android.support.FILE_PROVIDER_PATHS"
+273-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+274                android:resource="@xml/share_download_paths" />
+274-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-55
+275        </provider>
+276        <provider
+276-->[:react-native-webview] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-18:20
+277            android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider"
+277-->[:react-native-webview] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-83
+278            android:authorities="com.doomshell.aapkepass.fileprovider"
+278-->[:react-native-webview] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-64
+279            android:exported="false"
+279-->[:react-native-webview] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-37
+280            android:grantUriPermissions="true" >
+280-->[:react-native-webview] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-webview/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:14:13-47
+281            <meta-data
+281-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:58
+282                android:name="android.support.FILE_PROVIDER_PATHS"
+282-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+283                android:resource="@xml/file_provider_paths" />
+283-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-55
+284        </provider>
+285        <provider
+285-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:34:9-42:20
+286            android:name="com.RNFetchBlob.Utils.FileProvider"
+286-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:35:13-62
+287            android:authorities="com.doomshell.aapkepass.provider"
+287-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:36:13-60
+288            android:exported="false"
+288-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:37:13-37
+289            android:grantUriPermissions="true" >
+289-->[:rn-fetch-blob] /Users/dheerndra/Documents/AapkePass/node_modules/rn-fetch-blob/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:38:13-47
+290            <meta-data
+290-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:15:13-17:58
+291                android:name="android.support.FILE_PROVIDER_PATHS"
+291-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:17-67
+292                android:resource="@xml/provider_paths" />
+292-->[:react-native-image-picker] /Users/dheerndra/Documents/AapkePass/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:17:17-55
+293        </provider>
+294
+295        <activity android:name="com.facebook.CustomTabMainActivity" />
+295-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:26:9-71
+295-->[com.facebook.android:facebook-common:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/5f165a6c0a50ecd6c1bb0484dcbef2af/transformed/jetified-facebook-common-16.3.0/AndroidManifest.xml:26:19-68
+296        <activity
+296-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:27:9-44:20
+297            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+297-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:28:13-80
+298            android:excludeFromRecents="true"
+298-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:29:13-46
+299            android:exported="true"
+299-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:30:13-36
+300            android:launchMode="singleTask"
+300-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:31:13-44
+301            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+301-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:32:13-72
+302            <intent-filter>
+302-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:33:13-43:29
+303                <action android:name="android.intent.action.VIEW" />
+303-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+303-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+304
+305                <category android:name="android.intent.category.DEFAULT" />
+305-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:15-74
+305-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:25-71
+306                <category android:name="android.intent.category.BROWSABLE" />
+306-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:15-76
+306-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:25-73
+307
+308                <data
+308-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+309                    android:host="firebase.auth"
+310                    android:path="/"
+311                    android:scheme="genericidp" />
+311-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+312            </intent-filter>
+313        </activity>
+314        <activity
+314-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:45:9-62:20
+315            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+315-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:46:13-79
+316            android:excludeFromRecents="true"
+316-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:47:13-46
+317            android:exported="true"
+317-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:48:13-36
+318            android:launchMode="singleTask"
+318-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:49:13-44
+319            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+319-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:50:13-72
+320            <intent-filter>
+320-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:51:13-61:29
+321                <action android:name="android.intent.action.VIEW" />
+321-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:15-67
+321-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:59:23-64
+322
+323                <category android:name="android.intent.category.DEFAULT" />
+323-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:15-74
+323-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:25-71
+324                <category android:name="android.intent.category.BROWSABLE" />
+324-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:15-76
+324-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:61:25-73
+325
+326                <data
+326-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:15-48
+327                    android:host="firebase.auth"
+328                    android:path="/"
+329                    android:scheme="recaptcha" />
+329-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:62:21-45
+330            </intent-filter>
+331        </activity>
+332
+333        <service
+333-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:64:9-73:19
+334            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+334-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:65:13-101
+335            android:enabled="true"
+335-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:66:13-35
+336            android:exported="false" >
+336-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:67:13-37
+337            <intent-filter>
+337-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:68:13-72:29
+338                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+338-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:17-89
+338-->[com.google.firebase:firebase-auth:21.0.1] /Users/dheerndra/.gradle/caches/transforms-3/214ee4d9cb445b190b68ae388be55bcb/transformed/jetified-firebase-auth-21.0.1/AndroidManifest.xml:69:25-86
+339
+340                <category android:name="android.intent.category.DEFAULT" />
+340-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:15-74
+340-->/Users/dheerndra/Documents/AapkePass/android/app/src/main/AndroidManifest.xml:60:25-71
+341            </intent-filter>
+342        </service>
+343        <!--
+344         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+345         with the application context. This config is merged in with the host app's manifest,
+346         but there can only be one provider with the same authority activated at any given
+347         point; so if the end user has two or more different apps that use Facebook SDK, only the
+348         first one will be able to use the provider. To work around this problem, we use the
+349         following placeholder in the authority to identify each host application as if it was
+350         a completely different provider.
+351        -->
+352        <provider
+352-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:29:9-32:40
+353            android:name="com.facebook.internal.FacebookInitProvider"
+353-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:30:13-70
+354            android:authorities="com.doomshell.aapkepass.FacebookInitProvider"
+354-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:31:13-72
+355            android:exported="false" />
+355-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:32:13-37
+356
+357        <receiver
+357-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:34:9-40:20
+358            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+358-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:35:13-86
+359            android:exported="false" >
+359-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:36:13-37
+360            <intent-filter>
+360-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:37:13-39:29
+361                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+361-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:38:17-95
+361-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:38:25-92
+362            </intent-filter>
+363        </receiver>
+364        <receiver
+364-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:41:9-47:20
+365            android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver"
+365-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:42:13-118
+366            android:exported="false" >
+366-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:43:13-37
+367            <intent-filter>
+367-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:44:13-46:29
+368                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED" />
+368-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:45:17-103
+368-->[com.facebook.android:facebook-core:16.3.0] /Users/dheerndra/.gradle/caches/transforms-3/0416f60b94d2df5dde71621841a3442d/transformed/jetified-facebook-core-16.3.0/AndroidManifest.xml:45:25-100
+369            </intent-filter>
+370        </receiver>
+371        <receiver
+371-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:29:9-33:20
+372            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+372-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:30:13-85
+373            android:enabled="true"
+373-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:31:13-35
+374            android:exported="false" >
+374-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:32:13-37
+375        </receiver>
+376
+377        <service
+377-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:35:9-38:40
+378            android:name="com.google.android.gms.measurement.AppMeasurementService"
+378-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:36:13-84
+379            android:enabled="true"
+379-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:37:13-35
+380            android:exported="false" />
+380-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:38:13-37
+381        <service
+381-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:39:9-43:72
+382            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+382-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:40:13-87
+383            android:enabled="true"
+383-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:41:13-35
+384            android:exported="false"
+384-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:42:13-37
+385            android:permission="android.permission.BIND_JOB_SERVICE" />
+385-->[com.google.android.gms:play-services-measurement:20.0.2] /Users/dheerndra/.gradle/caches/transforms-3/a0110114275c07d527bfefad83035747/transformed/jetified-play-services-measurement-20.0.2/AndroidManifest.xml:43:13-69
+386
+387        <receiver
+387-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:28:9-35:20
+388            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+388-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:29:13-78
+389            android:exported="true"
+389-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:30:13-36
+390            android:permission="com.google.android.c2dm.permission.SEND" >
+390-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:31:13-73
+391            <intent-filter>
+391-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:27:13-29:29
+392                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+392-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:17-81
+392-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:28:25-78
+393            </intent-filter>
+394        </receiver>
+395        <!--
+396             FirebaseMessagingService performs security checks at runtime,
+397             but set to not exported to explicitly avoid allowing another app to call it.
+398        -->
+399        <service
+399-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:41:9-48:19
+400            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+400-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:42:13-82
+401            android:directBootAware="true"
+401-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:43:13-43
+402            android:exported="false" >
+402-->[com.google.firebase:firebase-messaging:23.0.0] /Users/dheerndra/.gradle/caches/transforms-3/cca23a6df7b090e1487f1cd86135a15d/transformed/jetified-firebase-messaging-23.0.0/AndroidManifest.xml:44:13-37
+403            <intent-filter android:priority="-500" >
+403-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:18:13-20:29
+404                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+404-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:17-78
+404-->[:react-native-firebase_messaging] /Users/dheerndra/Documents/AapkePass/node_modules/@react-native-firebase/messaging/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:25-75
+405            </intent-filter>
+406        </service>
+407
+408        <receiver
+408-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:42:9-49:20
+409            android:name="com.razorpay.RzpTokenReceiver"
+409-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:43:13-57
+410            android:exported="true" >
+410-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:44:13-36
+411            <intent-filter>
+411-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:46:13-48:29
+412                <action android:name="rzp.device_token.share" />
+412-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:37:13-61
+412-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:37:21-58
+413            </intent-filter>
+414        </receiver>
+415
+416        <meta-data
+416-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:61:9-63:58
+417            android:name="com.razorpay.plugin.googlepay_all"
+417-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:62:13-61
+418            android:value="com.razorpay.RzpGpayMerged" />
+418-->[com.razorpay:checkout:1.6.36] /Users/dheerndra/.gradle/caches/transforms-3/a3979fe2e3e878ddb7336aa947e931a3/transformed/jetified-checkout-1.6.36/AndroidManifest.xml:63:13-55
+419
+420        <activity
+420-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:23:9-27:75
+421            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+421-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:24:13-93
+422            android:excludeFromRecents="true"
+422-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:25:13-46
+423            android:exported="false"
+423-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:26:13-37
+424            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+424-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:27:13-72
+425        <!--
+426            Service handling Google Sign-In user revocation. For apps that do not integrate with
+427            Google Sign-In, this service will never be started.
+428        -->
+429        <service
+429-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:33:9-37:51
+430            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+430-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:34:13-89
+431            android:exported="true"
+431-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:35:13-36
+432            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+432-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:36:13-107
+433            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+433-->[com.google.android.gms:play-services-auth:20.2.0] /Users/dheerndra/.gradle/caches/transforms-3/6d20eecd540a0acc25274f6f254d1608/transformed/jetified-play-services-auth-20.2.0/AndroidManifest.xml:37:13-48
+434        <uses-library
+434-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/98a569dd27eb26f8760d486e657799aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:33:9-35:40
+435            android:name="org.apache.http.legacy"
+435-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/98a569dd27eb26f8760d486e657799aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:34:13-50
+436            android:required="false" />
+436-->[com.google.android.gms:play-services-maps:17.0.0] /Users/dheerndra/.gradle/caches/transforms-3/98a569dd27eb26f8760d486e657799aa/transformed/jetified-play-services-maps-17.0.0/AndroidManifest.xml:35:13-37
+437
+438        <activity
+438-->[com.google.android.gms:play-services-base:18.0.1] /Users/dheerndra/.gradle/caches/transforms-3/9e68c1b404d1c2612d9858bf106d475a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+439            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+439-->[com.google.android.gms:play-services-base:18.0.1] /Users/dheerndra/.gradle/caches/transforms-3/9e68c1b404d1c2612d9858bf106d475a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+440            android:exported="false"
+440-->[com.google.android.gms:play-services-base:18.0.1] /Users/dheerndra/.gradle/caches/transforms-3/9e68c1b404d1c2612d9858bf106d475a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+441            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- The activities will be merged into the manifest of the hosting app. -->
+441-->[com.google.android.gms:play-services-base:18.0.1] /Users/dheerndra/.gradle/caches/transforms-3/9e68c1b404d1c2612d9858bf106d475a/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+442        <activity
+442-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:18:9-24:45
+443            android:name="com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity"
+443-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:19:13-100
+444            android:enabled="false"
+444-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:20:13-36
+445            android:exported="false"
+445-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:21:13-37
+446            android:launchMode="singleInstance"
+446-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:22:13-48
+447            android:process=":playcore_missing_splits_activity"
+447-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:23:13-64
+448            android:stateNotNeeded="true" />
+448-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:24:13-42
+449        <activity
+449-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:25:9-29:65
+450            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+450-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:26:13-93
+451            android:exported="false"
+451-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:27:13-37
+452            android:stateNotNeeded="true"
+452-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:28:13-42
+453            android:theme="@style/Theme.PlayCore.Transparent" /> <!-- The services will be merged into the manifest of the hosting app. -->
+453-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:29:13-62
+454        <service
+454-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:32:9-39:19
+455            android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService"
+455-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:33:13-94
+456            android:enabled="false"
+456-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:34:13-36
+457            android:exported="true" >
+457-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:35:13-36
+458            <meta-data
+458-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:36:13-38:41
+459                android:name="com.google.android.play.core.assetpacks.versionCode"
+459-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:37:17-83
+460                android:value="11003" />
+460-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:38:17-38
+461        </service>
+462        <service
+462-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:40:9-43:40
+463            android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"
+463-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:41:13-95
+464            android:enabled="false"
+464-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:42:13-36
+465            android:exported="false" />
+465-->[com.google.android.play:core:1.10.3] /Users/dheerndra/.gradle/caches/transforms-3/35676f437c5ee651951a649aa2e1e0f7/transformed/jetified-core-1.10.3/AndroidManifest.xml:43:13-37
+466        <service
+466-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/9918847adeeb767b8f0c20de9bee8e51/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:29:9-35:19
+467            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+467-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/9918847adeeb767b8f0c20de9bee8e51/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:30:13-103
+468            android:exported="false" >
+468-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/9918847adeeb767b8f0c20de9bee8e51/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:31:13-37
+469            <meta-data
+469-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/9918847adeeb767b8f0c20de9bee8e51/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:32:13-34:39
+470                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+470-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/9918847adeeb767b8f0c20de9bee8e51/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:33:17-94
+471                android:value="cct" />
+471-->[com.google.android.datatransport:transport-backend-cct:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/9918847adeeb767b8f0c20de9bee8e51/transformed/jetified-transport-backend-cct-3.0.0/AndroidManifest.xml:34:17-36
+472        </service>
+473
+474        <provider
+474-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:26:9-31:39
+475            android:name="com.google.firebase.provider.FirebaseInitProvider"
+475-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:27:13-77
+476            android:authorities="com.doomshell.aapkepass.firebaseinitprovider"
+476-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:28:13-72
+477            android:directBootAware="true"
+477-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:29:13-43
+478            android:exported="false"
+478-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:30:13-37
+479            android:initOrder="100" />
+479-->[com.google.firebase:firebase-common:20.0.0] /Users/dheerndra/.gradle/caches/transforms-3/b20ddd90109789f5bcced7f9cfd13959/transformed/jetified-firebase-common-20.0.0/AndroidManifest.xml:31:13-36
+480
+481        <service
+481-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:26:9-30:19
+482            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+482-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:27:13-117
+483            android:exported="false"
+483-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:28:13-37
+484            android:permission="android.permission.BIND_JOB_SERVICE" >
+484-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:29:13-69
+485        </service>
+486
+487        <receiver
+487-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:32:9-34:40
+488            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+488-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:33:13-132
+489            android:exported="false" />
+489-->[com.google.android.datatransport:transport-runtime:3.0.0] /Users/dheerndra/.gradle/caches/transforms-3/d1805d95daf59757f5f6b061ce517bc5/transformed/jetified-transport-runtime-3.0.0/AndroidManifest.xml:34:13-37
+490
+491        <meta-data
+491-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/dheerndra/.gradle/caches/transforms-3/dbe8a11317c31905e1d186389c6e6f2f/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:11:9-13:43
+492            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+492-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/dheerndra/.gradle/caches/transforms-3/dbe8a11317c31905e1d186389c6e6f2f/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:12:13-84
+493            android:value="GlideModule" />
+493-->[com.github.bumptech.glide:okhttp3-integration:4.12.0] /Users/dheerndra/.gradle/caches/transforms-3/dbe8a11317c31905e1d186389c6e6f2f/transformed/jetified-okhttp3-integration-4.12.0/AndroidManifest.xml:13:13-40
+494        <meta-data
+494-->[com.google.android.gms:play-services-basement:18.0.0] /Users/dheerndra/.gradle/caches/transforms-3/662a8da50d2d634a1eb3aeaf991c3c94/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+495            android:name="com.google.android.gms.version"
+495-->[com.google.android.gms:play-services-basement:18.0.0] /Users/dheerndra/.gradle/caches/transforms-3/662a8da50d2d634a1eb3aeaf991c3c94/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+496            android:value="@integer/google_play_services_version" />
+496-->[com.google.android.gms:play-services-basement:18.0.0] /Users/dheerndra/.gradle/caches/transforms-3/662a8da50d2d634a1eb3aeaf991c3c94/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+497
+498        <activity
+498-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:14:9-19:64
+499            android:name="io.agora.rtc.ss.impl.ScreenSharing$LocalScreenCaptureAssistantActivity"
+499-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:15:13-98
+500            android:configChanges="screenSize|orientation"
+500-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:16:13-59
+501            android:exported="false"
+501-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:17:13-37
+502            android:screenOrientation="fullUser"
+502-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:18:13-49
+503            android:theme="@android:style/Theme.Translucent" />
+503-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:19:13-61
+504
+505        <service
+505-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:21:9-28:19
+506            android:name="io.agora.rtc.ss.impl.LocalScreenSharingService"
+506-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:22:13-74
+507            android:exported="false"
+507-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:23:13-37
+508            android:foregroundServiceType="mediaProjection" >
+508-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:24:13-60
+509            <intent-filter>
+509-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:25:13-27:29
+510                <action android:name="android.intent.action.screenshare" />
+510-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:26:17-76
+510-->[io.agora.rtc:full-screen-sharing:3.7.0.3] /Users/dheerndra/.gradle/caches/transforms-3/8d97b0c46b02a1cef90ac6c5b47dc7fc/transformed/jetified-full-screen-sharing-3.7.0.3/AndroidManifest.xml:26:25-73
+511            </intent-filter>
+512        </service>
+513    </application>
+514
+515</manifest>

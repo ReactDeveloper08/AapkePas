@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "artifactType": {
+    "type": "OPTIMIZED_PROCESSED_RES",
+    "kind": "Directory"
+  },
+  "applicationId": "com.doomshell.aapkepass",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86_64"
+        }
+      ],
+      "versionCode": 12053004,
+      "versionName": "1.7",
+      "outputFile": "resources-x86_64-release-optimize.ap_"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "x86"
+        }
+      ],
+      "versionCode": 12053002,
+      "versionName": "1.7",
+      "outputFile": "resources-x86-release-optimize.ap_"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "arm64-v8a"
+        }
+      ],
+      "versionCode": 12053003,
+      "versionName": "1.7",
+      "outputFile": "resources-arm64-v8a-release-optimize.ap_"
+    },
+    {
+      "type": "ONE_OF_MANY",
+      "filters": [
+        {
+          "filterType": "ABI",
+          "value": "armeabi-v7a"
+        }
+      ],
+      "versionCode": 12053001,
+      "versionName": "1.7",
+      "outputFile": "resources-armeabi-v7a-release-optimize.ap_"
+    }
+  ]
+}

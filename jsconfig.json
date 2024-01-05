@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "assets/*": ["assets/*"],
+      "components/*": ["components/*"],
+      "state/*": ["state/*"],
+      "api/*": ["api/*"],
+      "firebase_api/*": ["firebase_api/*"],
+      "routes/*": ["routes/*"],
+      "clientScreens/*": ["clientScreens/*"],
+      "DoctorSide/*": ["DoctorSide/*"],
+      "Redux/*": ["Redux/*"],
+      "validations/*": ["validations/*"],
+      "callLib/*": ["callLib/*"],
+      "popup/*": ["popup/*"],
+      "tabs/*": ["tabs/*"],
+      "ChatDoctor/*":["ChatDoctor/*"],
+      "Chat_WiseWord/*": ["Chat_WiseWord/*"],
+      "LiveBroadCaster/*":["LiveBroadCaster/*"],
+      "ViewUtils/*":["ViewUtils/*"],
+    }
+  },
+  "include": ["index.js", "App.js", "src/*/*", "src/components"]
+}

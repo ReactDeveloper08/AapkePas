@@ -1,0 +1,2 @@
+export const SAVE_AVAILABLE_BALANCE = 'SAVE_AVAILABLE_BALANCE';
+export const RESET_BALANCE = 'userDetails/RESET_BALANCE';

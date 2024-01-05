@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_stat_name.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xxhdpi/ic_stat_name.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_phone_missed_black_24dp.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xhdpi/ic_phone_missed_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_acpt_btn.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xhdpi/acpt_btn.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_call_bg.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xhdpi/call_bg.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/raw_nosound.mp3.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/raw/nosound.mp3"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/layout_main_layout.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/layout/main_layout.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_call_black_24dp.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xhdpi/ic_call_black_24dp.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/layout_incomingcall_activity.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/layout/incomingcall_activity.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_stat_name.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xxxhdpi/ic_stat_name.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_rjt_btn.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xhdpi/rjt_btn.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_stat_name.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-mdpi/ic_stat_name.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_stat_name.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xhdpi/ic_stat_name.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/raw_ringtune.mp3.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/raw/ringtune.mp3"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_stat_name.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-hdpi/ic_stat_name.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/raw_play.wav.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/raw/play.wav"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_bg_circle.xml.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/drawable-xxxhdpi/bg_circle.xml"
+    },
+    {
+        "merged": "/Users/dheerndra/Documents/AapkePass/android/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/dheerndra/Documents/AapkePass/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png"
+    }
+]

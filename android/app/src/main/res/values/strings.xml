@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AapkePass</string>
+     <string name="facebook_app_id">560901308582711</string>
+    <string name="fb_login_protocol_scheme">fb560901308582711</string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="default_notification_channel_id">Aapke Pass</string>
+    <string name="default_notification_channel_name">Aapke Pass</string>
+</resources>

@@ -1,0 +1,18 @@
+export {default as home} from './home';
+export {default as expertDetail} from './expertDetail';
+export {default as policies} from './policies';
+export {default as profile} from './profile';
+export {default as refferal} from './refferal';
+export {default as availableBalance} from './availableBalance';
+// export {default as review} from './review';
+export {default as session} from './session';
+export {default as userDetails} from './userDetails';
+export {default as wallet} from './wallet';
+export {default as location} from './location';
+export {default as chat} from './chat';
+export {default as VideoCall} from './VideoCall';
+export {default as callToAstro} from './callToAstro';
+export {default as docHome} from './docHome';
+export {default as liveStream} from './liveStream';
+export {default as declineService} from './declineService';
+export {default as ques} from './ques';
